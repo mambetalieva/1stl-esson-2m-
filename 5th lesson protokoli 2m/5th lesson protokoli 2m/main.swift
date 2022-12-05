@@ -41,6 +41,10 @@ import Foundation
 //}
 //print("In stock was \(array.count + array1.count) boxes. \(array.count) products. \(array1.count) foods.")
 
+
+
+
+
 // Протокол и работа с ними
 
 //protocol HumanProtocol {
