@@ -74,18 +74,18 @@ func takeTheProduct(name: String, amount: Int, country: String ){
 
 //takeTheProduct(name: "2", amount: 2, country: "brr")
 
-//func calculate(){
-//    print("Enter the product you want")
-//    let product  = readLine()!
-//
-//    print("Enter the amount of product")
-//    let amount  = readLine()!
-//
-//    print("Enter the country  which send product")
-//    let country  = readLine()!
-//}
-//
-//func countSumDelivery(deliverySum: Int, sumProduct: Int){
-//    print(deliverySum + sumProduct)
-//}
-//
+func calculate(product:Products){
+    print("Vvedite colichestvo")
+    let amount  = readLine()!
+   
+    print("Enter the country  which send product")
+    let country  = readLine()!
+    print("Obshaya summa: \(product.price * Int(amount)!2)")
+
+}
+
+
+func countSumDelivery(deliverySum: Int, sumProduct: Int){
+    print(deliverySum + sumProduct)
+}
+
