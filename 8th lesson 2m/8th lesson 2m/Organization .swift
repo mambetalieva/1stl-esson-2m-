@@ -14,18 +14,19 @@ class OrganizationInsideCountry {
         self.delivery = delivery
     }
     func makeOrder(product: String){
+        var check = true
         for i in stock{
             for i0 in i.productsArray{
                 if product == i0.barcode || product == i0.name{
-                //
-                }else{
-                    print(" На складе такого продукта нет")
-                }
-            }
+                    print("Закажите через  службу доставки")
+                    check = false
+                }}}
+        if check{
+            print(" На складе такого продукта нет")
         }
     }
+  
 }
-
 class OrganizationAbroadCountry {
     var name: String
     var location : [String]
@@ -39,5 +40,18 @@ class OrganizationAbroadCountry {
         self.service = service
         self.delivery = delivery
     }
+    
+    func makeOrder(product: String){
+        var check = true
+        for i in stock{
+            for i0 in i.products{
+                if product == i0.barcode || product == i0.name{
+                    print("Закажите через доставку")
+                    check = false
+                }}}
+        if check{
+            print(" На складе такого продукта нет")
+        }
+    }
+    
 }
-
